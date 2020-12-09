@@ -1,6 +1,4 @@
 # MyHomeWork
-This is my homeworks.
-<hr/>
 
 ## 1. ダイスを投げる
 
