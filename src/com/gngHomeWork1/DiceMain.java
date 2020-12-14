@@ -1,4 +1,4 @@
-package GNGHomeWork1;
+package com.gngHomeWork1;
 
 import java.util.Scanner;
 
