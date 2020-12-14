@@ -23,7 +23,6 @@ public class DiceMain {
 			System.out.println(String.format("%-6s : %3d", dice.getDiceName(), number));
 			sum += number;
 		}
-		System.out.println();
 		// end of my code
 		
 		return sum;
