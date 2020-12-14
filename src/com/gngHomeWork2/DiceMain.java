@@ -20,9 +20,10 @@ public class DiceMain {
 		// start of my code
 		for (Dice dice : diceList) {
 			int number = dice.roll();
-			System.out.println(String.format("%-7s: %3d", dice.getDiceName(), number));
+			System.out.println(String.format("%-6s : %3d", dice.getDiceName(), number));
 			sum += number;
 		}
+		System.out.println();
 		// end of my code
 		
 		return sum;
