@@ -2,7 +2,7 @@
 
 ### 1. GNGHomeWork1 - ダイスを投げる。
 
-  + packageのタイトル：<b>GNGHomeWork1</b>
+  + packageのタイトル：<b>com.gngHomeWork1</b>
   + ダイスを投げて出る結果をリストで<i><b>retrun</b></i>するメソッドを作成する。
 
 ### 2. gngHomeWork2 - 色んなダイスを投げる。
