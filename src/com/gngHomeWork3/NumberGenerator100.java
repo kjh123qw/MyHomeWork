@@ -16,7 +16,7 @@ public class NumberGenerator100 {
 		
 		// Customize 1
 //		for (byte i = 1; i <= 100; i++) {
-//			hundredList.add((byte)(Math.random() * i), i);
+//			hundredList.add((byte)Math.floor(Math.random() * i), i);
 //		}
 	}
 	
