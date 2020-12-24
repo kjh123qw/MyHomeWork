@@ -12,5 +12,5 @@
 
 ### 3. gngHomeWork3 - 百の数字をランダムで出力してみよう。
 
-  + Packageのタイトル：<b>com.gngHomeWork2</b>
+  + Packageのタイトル：<b>com.gngHomeWork3</b>
   + 1から100までの数字をランダムで出力する。
