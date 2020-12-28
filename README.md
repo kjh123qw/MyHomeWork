@@ -14,3 +14,4 @@
 
   + Packageのタイトル：<b>com.gngHomeWork3</b>
   + 1から100までの数字をランダムで出力する。
+  + 2020.12.28：SolutionB, SolutionCの追加。Mainの函数にTestの追加。
