@@ -1,6 +1,6 @@
 # MyHomeWork
 
-### 1. GNGHomeWork1 - ダイスを投げる。
+### 1. gngHomeWork1 - ダイスを投げる。
 
   + packageのタイトル：<b>com.gngHomeWork1</b>
   + ダイスを投げて出る結果をリストで<i><b>retrun</b></i>するメソッドを作成する。
