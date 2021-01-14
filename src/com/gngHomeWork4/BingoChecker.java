@@ -30,22 +30,22 @@ public class BingoChecker {
 	public boolean checkBingo(byte calledNum) {
 		boolean returnValue = false;
 		
-//		번호 찾기 and 번호에 해당되면 0으로 변경
+//		ビンゴボードでバン後を探す：探したら0で変更
 		for (int i = 0; i < 5; i++) {
 			for (int j = 0; j < 5; j++) {
 				if (board5x5[i][j] == calledNum) board5x5[i][j] = 0;
 			}
 		}
 		
-//		가로, 세로, 대각선 중 합이 0이 된다면 빙고!
+//		横、縦、対角線の中で合計が0になったらビンゴ！
 		for (int i = 0; i < 5; i++) {
-			int sumHor = 0; // 가로 줄 체크 용
-			int sumVer = 0; // 세로 줄 체크 용
-			int sumDia1 = 0; // 대각선 체크 용
-			int sumDia2 = 0; // 반대 대각선 체크 용
+			int sumHor = 0;
+			int sumVer = 0;
+			int sumDia1 = 0;
+			int sumDia2 = 0;
 			for (int j = 0; j < 5; j++) {
-				sumHor += board5x5[i][j]; // 가로 줄 합
-				sumVer += board5x5[j][i]; // 세로 줄 합
+				sumHor += board5x5[i][j];
+				sumVer += board5x5[j][i];
 				if(i == 0) sumDia1 += board5x5[j][j];
 				if(i == 0) sumDia2 += board5x5[4-j][j];
 			}
