@@ -32,23 +32,27 @@ public class PrintBookList {
         				!cols[3].equals("") &&
         				!cols[4].equals("") &&
         				!cols[5].equals("")) {
-        			if(cols[3].split("/").length == 3 && // yyyy/M/d 形式を確認
-        					cols[4].replace("-", "").length() == 13) { // ISBN-13が13字を確認
-        				boolean isNum = true;
-        				try { // 値段と出版日の形式を確認
-        					price = Integer.parseInt(cols[5]);
-        					date = LocalDate.parse(cols[3], DateTimeFormatter.ofPattern("yyyy/M/d"));
-        				} catch(NumberFormatException e) {
-        					isNum = false;
-        				} catch(DateTimeParseException e) {
-        					isNum = false;
-        				}
-        				if(price > 0 && isNum) {
-                			bookList.add(new Book(
-        					cols[0], cols[1], cols[2],
-        					date, cols[4], price));
-        				}
-        				
+        			if(cols[0].length() <= 200 && // タイトル２００文字まで
+        					cols[1].length() <= 100 && // 著者を１００文字まで
+        					cols[2].length() <= 100) { // 出版社を１００文字まで
+	        			if(cols[3].split("/").length == 3 && // yyyy/M/d 形式を確認
+	        					cols[4].replace("-", "").length() == 13) { // ISBN-13が13字を確認
+	        				boolean isNum = true;
+	        				try { // 値段と出版日の形式を確認
+	        					price = Integer.parseInt(cols[5]);
+	        					date = LocalDate.parse(cols[3], DateTimeFormatter.ofPattern("yyyy/M/d"));
+	        				} catch(NumberFormatException e) {
+	        					isNum = false;
+	        				} catch(DateTimeParseException e) {
+	        					isNum = false;
+	        				}
+	        				if(price > 0 && price <= 100000000 && isNum) {
+	                			bookList.add(new Book(
+	        					cols[0], cols[1], cols[2],
+	        					date, cols[4], price));
+	        				}
+	        				
+	        			}
         			}
         		}
             }
