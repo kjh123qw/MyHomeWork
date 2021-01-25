@@ -20,3 +20,8 @@
 
   + Packageのタイトル：<b>com.gngHomeWork4</b>
   + 今回作成したNumberGenerator100クラスを利用してビンゴをする。
+
+### 5. gngHomeWork5 - books.csvデータを読んで出力しよう。
+
+  + Packageのタイトル：<b>com.gngHomeWork5</b>
+  + books.csvデータを読んで形式が間違ったデータを除いて出力する。
