@@ -25,3 +25,9 @@
 
   + Packageのタイトル：<b>com.gngHomeWork5</b>
   + books.csvデータを読んで形式が間違ったデータを除いて出力する。
+
+### 6. gngHomeWork6 - books.csvデータを読んで整列しよう。
+
+  + Packageのタイトル：<b>com.gngHomeWork6</b>
+  + books.csvデータを読んで形式が間違ったデータを除いて出力する。
+  + books.csvデータを読んで整列する。
